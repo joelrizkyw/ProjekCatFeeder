@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgLogoCatFeeder"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/logo_cat_feeder" />
+
+    <TextView
+        android:id="@+id/txtJudulSchedule1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLogoCatFeeder"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="28dp"
+        android:text="Schedule 1"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTimeSchedule1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtJudulSchedule1"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:text="No Time Set"
+        android:textColor="@color/black"
+        android:textSize="38sp" />
+
+    <TextView
+        android:id="@+id/txtJudulSchedule2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groupBtnSchedule1"
+        android:layout_marginTop="30dp"
+        android:text="Schedule 2"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTimeSchedule2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtJudulSchedule2"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:text="No Time Set"
+        android:textColor="@color/black"
+        android:textSize="38sp" />
+
+    <TextView
+        android:id="@+id/txtJudulSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groupBtnSchedule2"
+        android:layout_marginTop="30dp"
+        android:text="Spin Servo Manually"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerServo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtJudulSpinner"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:id="@+id/groupBtnSchedule1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTimeSchedule1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSetSchedule1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#4D4C7D"
+            android:text="Set"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnEditSchedule1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#F99417"
+            android:text="Edit"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnDeleteSchedule1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#363062"
+            android:text="Delete"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/groupBtnSchedule2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTimeSchedule2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSetSchedule2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#4D4C7D"
+            android:text="Set"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnEditSchedule2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#F99417"
+            android:text="Edit"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnDeleteSchedule2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#363062"
+            android:text="Delete"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/groupBtnSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerServo"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSetSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#4D4C7D"
+            android:text="Set"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>
